@@ -1,0 +1,97 @@
+
+body{
+    width: 70%;
+     margin: 0 auto;
+ }
+    #container
+    {background-color:#E0E0E0;
+ 
+    }
+ .l
+ {
+     color:seagreen ;
+ }
+ #header
+ {
+     background-color:seagreen;
+     height: 50px;
+     padding: 20px;
+     text-align: center;
+   
+ }
+ h3{
+     text-align: center;
+     color: teal;
+ }
+ h1
+ {
+ color: aliceblue;
+ }
+ #header h1
+ {
+     margin: 0;
+ }
+ 
+ #left
+ { 
+     display: inline-block;
+     width: 29%;
+     vertical-align: top;
+     
+ }
+ }
+ #left ul
+ {
+     text-align: center;
+     list-style-type: none;
+     padding: 0;
+ }
+ #left ul>li:not(last-child)
+ {
+     border-bottom: 1px black dotted;
+     padding: 10px;
+ }
+ #left ul>li a
+ {
+     text-decoration: none;
+     display: inline-block;
+     padding: 5px;
+     width: 100%;
+ }
+ #left ul>li a:hover{
+     color: green;
+ }
+ #right
+ {    
+     display: inline-block;
+     width: 70%;
+     background-color:white;
+ }
+ 
+ #footer
+ {
+     background-color:green;text-align:center; padding: 8px;
+ }
+ .pho
+ {
+     width: 85%;
+     height: 250px;
+     padding:35px ;
+     text-align: center;
+     margin-left: auto;margin-right: auto;
+ }
+ .img
+ {
+     width: 50%;
+     height:250px;
+     padding: 40px;
+     margin-left: 130px;
+ }
+ p::first-letter
+ {
+  font-size: 32px;
+ }
+ .price::before
+ {
+     content: '￥';
+ }
