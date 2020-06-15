@@ -10,17 +10,21 @@ ul {
 }
 .container {
     
-   width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    padding: 0;
 }
 .icon {
     width: 25px;
     height: 25px;
+    
 }
 header {
-    background-color:black;
+    background-color:rgb(128, 0, 19);
+    
 }
 .header-title {
     display:flex;
@@ -29,8 +33,13 @@ header {
     align-items: center;
     font-size: 20px;
     height: 70px;
-    color:white;
-    justify-content: center;
+    
+   
+   
+}  
+span{
+    color: white;
+    padding: 10px;
 }
 
 .nav {
@@ -44,30 +53,27 @@ header {
 }
 .nav ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
-
 }
 .nav ul>li {
     display: flex;
     flex-direction: row;
+   
 }
 .nav ul>li a {
+    text-decoration: none;
     display: inline-block;
     padding: 8px;
-    color:white;
-    text-decoration: none;
-    font-size: 10px;
+    color: white;
 }
 .nav ul>li a:hover{
     
     color: blue;
 }
-section{
-    background-color: gainsboro;
-  
-}
+
 hr{
-    width: 30%;
+    width: 50%;
     text-align: center;
     border:bold black;
 }
@@ -76,21 +82,32 @@ hr{
     padding-top: 50px;
     font-size: 20px;
     text-align: center;
-   position: relative;
-   top: -20px;
-    color: black;
+    position: relative;
+    top: -20px;
+    color: rgb(128, 0, 19);
+    align-items: center;
 
 }
 .photo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 8%;
-    margin-right: 8%;
+  
 }
-.photo img{
-    width:200px;
-    height: 300px;
+.container.column  ul>li img
+{
+    width: 250px;
+    height: 400px;
+    border: solid gainsboro;
+    border-radius:16px;
+}
+    
+
+p
+{
+    text-align: center;
+    color: rgb(128, 0, 19);
+    
 }
 .photo img:hover{  
     transform: scale(1.2); 
@@ -101,18 +118,21 @@ hr{
     text-align: center;
     font-size: 25px;
 }
-.container-column {
+.container.column {
     flex-direction: column;
+    padding: 0;
 }
 footer {
-    background-color: black;
+    background-color:rgb(128, 0, 19);
     height:250px;
 }
 .left {
-    display:flex;
-    flex: 2;
-    padding: 32px;
-    justify-content: left;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
 }
 .left p{
     text-indent: 2em;
@@ -129,18 +149,20 @@ footer {
     margin-left: 15%;
 }
 .right img{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     position: relative;
     top: 20px;
+    margin-left: 100px;
 }
 .bottom {
     text-align: center;
     font-size: 15px;
     color: white;
   position: relative;
-  top: 20px;
+  top: 55px;
 }
+
 
 
 
