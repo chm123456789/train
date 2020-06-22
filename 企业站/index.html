@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script src="./libs/show/show.js"></script>
+    <script src="./libs/scrollReveal/scrollreveal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="./libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>猪猪の宠物世界</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="logo">猪猪の宠物店</div>
+        <nav>
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我们</a>
+          <a href="#showcases">宠物展示</a>
+          <a href="#service">服务流程</a>
+          <a href="#team-intro">团队介绍</a>
+          <a href="./news.html">公司动态</a>
+          <i class="fas fa-search"></i>
+        </nav>
+        <div class="burger">
+          <div class="burger-line1"></div>
+          <div class="burger-line2"></div>
+          <div class="burger-line3"></div>
+        </div>
+      </header>
+      <div id="home" class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <div class="glide__slide">
+              <div class="slide-caption">
+                <h1>猪猪爱心宠物店</h1>
+                <h3>
+                  在猪猪爱心宠物店，领养心爱的宠物，体验不同的乐趣，现已新增羊驼。
+                </h3>
+                <button class="explore-btn">探索更多</button>
+              </div>
+              <div class="backdrop"></div>
+              <img src="./images/cat-banner.jpg" alt="cat" />
+            </div>
+            <div class="glide__slide">
+              <div class="slide-caption left">
+                <h1>可爱的羊驼，爱了又爱</h1>
+                <h3>
+                  在羊驼世界，感受高贵的气息，虽然它很可爱，但请小心羊驼的口水。
+                </h3>
+                <button class="explore-btn">探索更多</button>
+              </div>
+              <div class="backdrop"></div>
+              <img src="./images/yangtuo-banner.jpg" alt="yangtuo"></img>
+            </div>
+            <div class="glide__slide">
+              <div class="slide-caption left">
+                <h1>中二的哈士奇，拆家小能手</h1>
+                <h3>
+                  迎面而来的中二气息，养了它你就要做好被拆家的准备了
+                </h3>
+                <button class="explore-btn">探索更多</button>
+              </div>
+              <div class="backdrop"></div>
+              <img src="./images/dog3.jpg" alt="dog"></img>
+            </div>
+          </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            >
+          </button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <section id="service" class="service">
+          <h2 class="title1">服务流程</h2>
+          <p class="intro">
+            先通过网站进行选购预约，预约成功后即可登记领养宠物
+          </p>
+          <div class="services">
+            <div class="service-item">
+              <i class="fas fa-comments"></i>
+              <h2 class="service-title">预约登记</h2>
+              <p class="service-content">
+                客户需通过网站提前进行预约
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-paw"></i>
+              <h2 class="service-title">挑选宠物</h2>
+              <p class="service-content">
+                客户通过现场接触确定领养的宠物
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-pen"></i>
+              <h2 class="service-title">签订协议</h2>
+              <p class="service-content">
+                客户选择领养的宠物，签署必要的领养协议
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-medkit"></i>
+              <h2 class="service-title">接种疫苗</h2>
+              <p class="service-content">
+                客户携带宠物到宠物医院接种必要的疫苗并进行观察
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-camera"></i>
+              <h2 class="service-title">观察阶段</h2>
+              <p class="service-content">
+                疫苗接种后的一周内可寄放至宠物店进行观察
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-check"></i>
+              <h2 class="service-title">成功领养</h2>
+              <p class="service-content">
+                观察期结束后，客户可带自己心爱的宠物离开宠物店
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="showcases" class="showcases section-bg">
+          <h2 class="title1">宠物展示</h2>
+          <div class="filter-btns">
+            <button class="filter-btn active" data-filter="*">全部</button>
+            <button class="filter-btn" data-filter=".cat">猫猫</button>
+            <button class="filter-btn" data-filter=".dog">狗狗</button>
+            <button class="filter-btn" data-filter=".yangtuo">羊驼</button>
+          </div>
+          <div class="cases">
+            <div class="case-item cat">
+              <img
+                src="./images/cat1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item dog">
+              <img
+                src="./images/dog1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item yangtuo">
+              <img
+                src="./images/yangtuo1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item cat">
+              <img
+                src="./images/cat2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item dog">
+              <img
+                src="./images/dog2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item yangtuo">
+              <img
+                src="./images/yangtuo2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item cat">
+              <img
+                src="./images/cat3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item dog">
+              <img
+                src="./images/dog3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        
+        <section class="data-section">
+          <div class="data-piece">
+            <i class="fas fa-user"></i>
+            <div class="num">156</div>
+            <div class="data-desc">名员工</div>
+          </div>
+          <div class="data-piece">
+            <i class="fas fa-award"></i>
+            <div class="num">288</div>
+            <div class="data-desc">个奖项</div>
+          </div>
+          <div class="data-piece">
+            <i class="fas fa-laugh-wink"></i>
+            <div class="num">1588</div>
+            <div class="data-desc">次点赞</div>
+          </div>
+          <div class="data-piece">
+            <i class="fas fa-cat"></i>
+            <div class="num">220</div>
+            <div class="data-desc">只宠物</div>
+          </div>
+        </section>
+        <section id="team-intro" class="team-intro section-bg">
+          <h2 class="title1">团队介绍</h2>
+          <div class="team-members">
+            <div class="team-member">
+              <div class="profile-image">
+                <img src="./images/man-wearing-black-suit-2955376.jpg" alt="" />
+              </div>
+              <h4 class="name">陈昀昊</h4>
+              <p class="position">店长</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="./images/smiling-woman-wearing-black-sweater-1587009.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">谢可盈</h4>
+              <p class="position">副店长</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="./images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">冯玉祥</h4>
+              <p class="position">财务总监</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img src="./images/business-woman-2697954_1920.jpg" alt="" />
+              </div>
+              <h4 class="name">芸筱狐</h4>
+              <p class="position">保洁阿姨</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+      <footer>
+        <div class="footer-menus">
+          <div class="contact-us">
+            <p class="menu-title">联系我们</p>
+            <p>地址：中国福建省福州市闽侯县闽江学院</p>
+            <p>电话：13645063478</p>
+            <p>传真：13645063478</p>
+            <p>电子邮箱：929682749@qq.com</p>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">服务概览</p>
+            <ul class="menu-items">
+              <li><a href="#">宠物寄养</a></li>
+              <li><a href="#">宠物领养</a></li>
+              <li><a href="#">宠物造型</a></li>
+              <li><a href="#">疫苗接种</a></li>
+            </ul>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">宠物展示</p>
+            <ul class="menu-items">
+              <li><a href="#">桌面网站</a></li>
+              <li><a href="#">移动网站</a></li>
+              <li><a href="#">领养项目</a></li>
+              <li><a href="#">软件App</a></li>
+            </ul>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">公司动态</p>
+            <ul class="menu-items">
+              <li><a href="#">信息公开</a></li>
+              <li><a href="#">最近新闻</a></li>
+              <li><a href="https://blog.cloudhao.top" target="_blank">最新博客</a></li>
+            </ul>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">帮助与支持</p>
+            <ul class="menu-items">
+              <li><a href="#">帮助中心</a></li>
+              <li><a href="#">联系客服</a></li>
+              <li><a href="#">文档资源</a></li>
+            </ul>
+          </div>
+          <p class="icp-info">闽ICP备18027236号</p>
+          <p class="rights">
+            &copy; 2020 猪猪の宠物世界 版权所有
+          </p>
+          <div class="scrollToTop">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="./libs/anime/anime.min.js"></script>
+    <script src="./libs/glide/glide.min.js"></script>
+    <script src="./libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
