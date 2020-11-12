@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="shortcut icon" href="./images/热门.png" />
-    <title>github热门项目</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <div id="container"></div>
-    <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel" >
-    var ListGroup = ReactBootstrap.ListGroup
+import React from 'react'
+import ReactDOM from 'react-dom'
+import axios from 'axios'
+import * as ReactBootstrap from 'react-bootstrap'
+import lazyload from 'lazysizes'
+var ListGroup = ReactBootstrap.ListGroup
 var Spinner = ReactBootstrap.Spinner
 var Alert = ReactBootstrap.Alert
 var Container = ReactBootstrap.Container
@@ -44,26 +25,29 @@ const Header = (props) => {
 
     return (<div>
         <Container>
-            <Nav className="justify-content-center" style={{ border: 'soild black' }} variant="tabs" defaultActiveKey="All" onSelect={(selectedKey) => props.onClick(selectedKey)} >
+            <Nav className="justify-content-center" style={{border:'soild black'}} variant="tabs" defaultActiveKey="All" onSelect={(selectedKey) => props.onClick(selectedKey)} >
                 {menuItems.map((item, key) => <Nav.Item key={key}><Nav.Link eventKey={item} >{item}</Nav.Link></Nav.Item>)}
             </Nav>
         </Container>
     </div>)
 }
+
 const Content = (props) => (<div>
     <Container>
         {props.children}
     </Container>
 </div>)
+
 const Footer = (props) => (<div>
     <Container>
         {props.children}
     </Container>
 </div>)
+
 const RepoCard = (props) => (<Card border="primary" style={{ marginTop: '8px', marginBottom: '8px' }}>
     <Card.Header className="text-center bg-white font-weight-bold">{props.no}</Card.Header>
-    <Card.Body className="bg-light">
-        <Card.Img src="./images/image.png" data-src={props.img} className="lazyload" />
+    <Card.Body>
+    <Card.Img src="./images/image.png" data-src={props.img} className="lazyload" />
         <Card.Title className="text-center"><Card.Link href={props.url} className="text-danger" target="_blank">{props.title}</Card.Link></Card.Title>
         <ListGroup className="list-group-flush">
             <ListGroupItem className="bg-light">
@@ -79,17 +63,20 @@ const RepoCard = (props) => (<Card border="primary" style={{ marginTop: '8px', m
                 <Card.Text><i className="fa fa-warning fa-lg fa-fw" style={{ color: 'purple' }}></i>{props.issues}</Card.Text>
             </ListGroupItem>
         </ListGroup>
+
     </Card.Body>
 </Card>)
+
 class App extends React.Component {
     constructor(props) {
         super(props)
         const cards = [
+
         ]
         this.state = { cards, loading: false, error: null, type: 'all', page: 1 }
     }
     handleNavClick = async (type = 'all', page = 1) => {
-        const { cards } = this.state
+        const {cards} = this.state
         console.log('type', type)
         var url = ''
         switch (type) {
@@ -182,20 +169,18 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center text-black jumbotron bg-light">
-                        <h5>版权所有 &copy; chm</h5>
-                    </div>
+                        版权所有 &copy;chm
+            </div>
                 </Footer>
             </div>
 
         </div>)
     }
 }
+
+
 ReactDOM.render(
     <App>
     </App>,
     document.getElementById('container')
 );
-    </script>
-</body>
-
-</html>
